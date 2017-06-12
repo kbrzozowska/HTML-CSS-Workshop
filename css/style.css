@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.col {
+    /*border: 2px solid red;*/
+    float: left;
+}
+
+.clearFix::after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+.container {
+    width: 900px;
+    margin: 0 auto;
+    position: relative;
+}
+.button{
+  color: white;
+  text-transform: uppercase;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #24BAA0;
+  width: 160px;
+  margin: 0 auto;
+  display: block;
+
+}
+.arrow{
+  font-size: 46px;
+  font-weight: bold;
+  color: #24BAA0;
+  position: absolute;
+
+}
+.arrow.left{
+  left:0;
+  top: 120px;
+}
+.arrow.right{
+  right: 0;
+  top: 120px;
+
+
+}
+h1 {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+h1 span, h2 span {
+    font-weight: bold;
+    color: #24baa0;
+}
+h2{
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: normal;
+  margin-bottom: 25px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+p{
+  font: 14px;
+  line-height: 20px;
+  margin-bottom: 25px;
+}
+
+/*czesc naglowkowa strony*/
+
+header {
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+}
+
+header nav.col {
+    float: right;
+}
+
+header li {
+    display: inline-block;
+    margin-left: 40px;
+    text-transform: uppercase;
+}
+header li:hover ul{
+  display: block;
+}
+/*podmenu "o firmie"*/
+header li ul{
+  display: none;
+  position: absolute;
+  padding: 5px;
+
+}
+header li ul li{
+  background-color: black;
+  display: block;
+  margin: 0;
+  line-height: 30px;
+  text-transform: none;
+}
+
+/*prezentacja produktow w sliderze*/
+
+#slider img {
+    float: left;
+}
+
+#slider h2, #slider p, #slider a {
+    text-align: center;
+}
+
+#slider a {
+    display: block;
+}
+#slider .buttonWrapper{
+  display: block;
+  width: 420px;
+  float: left;
+}
+
+/*oferta produktowa*/
+
+#offer .col, #price .col {
+    width: 285px;
+    height: 250px;
+    background-color: green;
+}
+
+#offer .col:nth-of-type(2) {
+    margin: 0 21px;
+}
+
+
+/*cennik*/
+
+#price .col:nth-of-type(2) {
+    margin: 0 21px;
+}
+
+
+/*sekcja kontakt*/
+
+#contact fieldset:nth-of-type(1) {
+    float: left;
+    width: 600px;
+}
+
+#contact input, #contact textarea, #contact label {
+    width: 100%;
+    display: block;
+}
+
+
+/*moja stopka*/
+
+footer .col:last-of-type {
+    float: right;
+    border: 1px solid red;
+}
+
+footer .col:nth-of-type(2) {}
